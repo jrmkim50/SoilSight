@@ -13,7 +13,7 @@ const Navbar = () => {
     pageNames["map"] = "/map";
     pageNames["new"] = "/new";
 
-    handleItemClick = (e, { name }) => setActive(name)
+    const handleItemClick = (e, { name }) => setActive(name)
 
     return (
         <div className = "p-2">
