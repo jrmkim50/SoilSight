@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Router from './components/router/Router';
-import './App.css';
+import 'semantic-ui-css/semantic.min.css';
 
 function App() {
   return (
