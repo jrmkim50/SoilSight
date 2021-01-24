@@ -22,7 +22,7 @@ const Navbar = () => {
                     as = {Link}
                     to = ""
                     name = {pageNames[HOME]}
-                    active={activeItem === pageNames[HOME]}
+                    active={active === pageNames[HOME]}
                     onClick={handleItemClick}
                 >
                     Home
@@ -31,7 +31,7 @@ const Navbar = () => {
                     as = {Link}
                     to = ""
                     name = {pageNames[MAP]}
-                    active={activeItem === pageNames[MAP]}
+                    active={active === pageNames[MAP]}
                     onClick={handleItemClick}
                 >
                     Map
@@ -40,7 +40,7 @@ const Navbar = () => {
                     as = {Link}
                     to = ""
                     name = {pageNames[NEW]}
-                    active={activeItem === pageNames[NEW]}
+                    active={active === pageNames[NEW]}
                     onClick={handleItemClick}
                 >
                     New
