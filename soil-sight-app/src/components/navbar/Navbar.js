@@ -9,9 +9,9 @@ const Navbar = () => {
     const MAP = "map";
     const NEW = "new";
     const pageNames = {};
-    pageNames["home"] = "/";
-    pageNames["map"] = "/map";
-    pageNames["new"] = "/new";
+    pageNames[HOME] = "/";
+    pageNames[MAP] = "/map";
+    pageNames[NEW] = "/new";
 
     const handleItemClick = (e, { name }) => setActive(name)
 
