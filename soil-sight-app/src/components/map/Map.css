@@ -1,0 +1,7 @@
+.MapView {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px !important; 
+    height: 400px;
+}

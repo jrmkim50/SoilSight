@@ -20,7 +20,7 @@ const Navbar = () => {
             <Menu borderless className = "Navbar">
                 <Menu.Item
                     as = {Link}
-                    to = ""
+                    to = {pageNames[HOME]}
                     name = {pageNames[HOME]}
                     active={active === pageNames[HOME]}
                     onClick={handleItemClick}
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </Menu.Item>   
                 <Menu.Item
                     as = {Link}
-                    to = ""
+                    to = {pageNames[MAP]}
                     name = {pageNames[MAP]}
                     active={active === pageNames[MAP]}
                     onClick={handleItemClick}
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </Menu.Item>    
                 <Menu.Item
                     as = {Link}
-                    to = ""
+                    to = {pageNames[NEW]}
                     name = {pageNames[NEW]}
                     active={active === pageNames[NEW]}
                     onClick={handleItemClick}
