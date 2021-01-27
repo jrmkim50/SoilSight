@@ -1,5 +1,5 @@
 import './Map.css'
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 const Map = () => {
     // const authOptions = {
