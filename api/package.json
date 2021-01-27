@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "author": "",
+  "dependencies": {
+    "azure-storage": "^2.10.3",
+    "parse-multipart": "1.0.4",
+    "stream": "0.0.2",
+    "tedious": "^11.0.1",
+    "uuid": "^8.3.2"
+  }
+}

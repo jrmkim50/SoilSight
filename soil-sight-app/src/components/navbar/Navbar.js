@@ -2,9 +2,8 @@ import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const Navbar = () => {
-    
-    const [active, setActive] = useState("home");
+const Navbar = (props) => {
+    const [active, setActive] = useState(props.location ? props.location.pathname.slice(1) : "home");
     const HOME = "home";
     const MAP = "map";
     const NEW = "new";
@@ -21,8 +20,8 @@ const Navbar = () => {
                 <Menu.Item
                     as = {Link}
                     to = {pageNames[HOME]}
-                    name = {pageNames[HOME]}
-                    active={active === pageNames[HOME]}
+                    name = {HOME}
+                    active={active === HOME}
                     onClick={handleItemClick}
                 >
                     Home
@@ -30,8 +29,8 @@ const Navbar = () => {
                 <Menu.Item
                     as = {Link}
                     to = {pageNames[MAP]}
-                    name = {pageNames[MAP]}
-                    active={active === pageNames[MAP]}
+                    name = {MAP}
+                    active={active === MAP}
                     onClick={handleItemClick}
                 >
                     Map
@@ -39,8 +38,8 @@ const Navbar = () => {
                 <Menu.Item
                     as = {Link}
                     to = {pageNames[NEW]}
-                    name = {pageNames[NEW]}
-                    active={active === pageNames[NEW]}
+                    name = {NEW}
+                    active={active === NEW}
                     onClick={handleItemClick}
                 >
                     New
