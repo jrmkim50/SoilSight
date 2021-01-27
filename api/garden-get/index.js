@@ -33,9 +33,9 @@ module.exports = function (context, req) {
         });
 
         request.on('row', columns => {
-            currentData[columns[1].value] = {};
+            currentData[columns[1].value.trim()] = {};
             columns.map((val, idx) => {
-                currentData[columns[1].value][fields[idx]] = val.value;
+                currentData[columns[1].value.trim()][fields[idx]] = val.value;
             })
         });
 
