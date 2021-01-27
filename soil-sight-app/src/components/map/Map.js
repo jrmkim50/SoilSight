@@ -105,13 +105,13 @@ const Map = () => {
             <div id="map">
 
             </div>
-            <div className="gardenInfo">
+            {/* <div className="gardenInfo">
                 <h4>Garden Name</h4>
                 <p>{(currentGarden) ? currentGarden.Name : ""}</p>
                 <h4>Garden Address</h4>
                 <p>{(currentGarden) ? currentGarden.ADDRESS : ""}</p>
                 {(currentGarden) ? (<img src={currentGarden.IMAGE_ID} alt="garden image"/>) : ""}
-            </div>
+            </div> */}
         </div>
     );
 }
