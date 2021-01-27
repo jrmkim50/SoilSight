@@ -109,7 +109,7 @@ const Map = () => {
                 <p>{(currentGarden) ? currentGarden.Name : ""}</p>
                 <h4>Garden Address</h4>
                 <p>{(currentGarden) ? currentGarden.ADDRESS : ""}</p>
-                {(currentGarden) ? (<img src={currentGarden.IMAGE_ID}/>) : ""}
+                {(currentGarden) ? (<img src={currentGarden.IMAGE_ID} alt="garden image"/>) : ""}
             </div>
         </div>
     );
