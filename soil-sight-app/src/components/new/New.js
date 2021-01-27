@@ -11,7 +11,7 @@ const New = (props) => {
         var formName = name;
         var formAddress = address;
         formData.append("path", selectedFile, `name: ${formName}, address: ${formAddress}`);
-        const API = process.env.REACT_APP_API || 'api';
+        const API = 'api';
         fetch(`${API}/garden-post`, {
             method: 'POST',
             body: formData
