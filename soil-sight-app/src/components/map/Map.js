@@ -16,7 +16,7 @@ const Map = () => {
     const atlantaBBox = [-84.41531, 33.66927, -84.37179, 33.85259];
 
     useEffect(() => {
-        getGardens(getMap);
+        // getGardens(getMap);
     }, [])
 
     function getMap(tempGardens) {
