@@ -11,8 +11,7 @@ const New = (props) => {
         var formName = name;
         var formAddress = address;
         formData.append("path", selectedFile, `name: ${formName}, address: ${formAddress}`);
-        const API = 'api';
-        fetch(`${API}/garden-post`, {
+        fetch(`/api/garden-post`, {
             method: 'POST',
             body: formData
         }).then(response => {
@@ -21,7 +20,7 @@ const New = (props) => {
             }
         });
     }
-
+ 
     const onNameChange = (event) => {
         setName(event.target.value.replace("'","''"));
     };

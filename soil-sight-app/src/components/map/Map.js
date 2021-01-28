@@ -90,8 +90,7 @@ const Map = () => {
 
     const getGardens = async (result) => {
         try {
-            const API = 'api';
-            let response = await fetch(`${API}/garden-get`);
+            let response = await fetch(`/api/garden-get`);
             let json = await response.json();
             setGardens(json);
             result(json);
